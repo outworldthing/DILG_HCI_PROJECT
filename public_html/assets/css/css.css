@@ -632,6 +632,37 @@ footer a:hover {
 }
 
 /*--------------------------------------------------------------
+# DMBPA
+--------------------------------------------------------------*/
+#lost-archive {
+  padding-bottom: 50px;
+}
+
+.lost-archive-column {
+  margin-top: 75px;
+}
+
+.lost-archive-column h2{
+  margin-bottom: 25px;
+}
+
+.lost-archive-body{
+  padding: 20px;
+}
+
+.lost-archive-body td {
+  border-bottom: solid black 1px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.lost-archive-body td > a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
 # Responsive
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
