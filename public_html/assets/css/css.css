@@ -15,6 +15,28 @@ a:hover {
   color: black;
 }
 
+.btns {
+  background: #333 none repeat scroll 0 0;
+  border: 1px solid #333;
+  color: #fff;
+  transition: 0.4s;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 35px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.btns:hover {
+  background: #cc0000 none repeat scroll 0 0;
+  border: 1px solid #cc0000;
+  color: #fff;
+  transition: 0.4s;
+}
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -45,8 +67,8 @@ a:hover {
   background: #3cd6ed;
   color: #fff;
 }
-/* Back to top button END*/
 
+/* Back to top button END*/
 .sub-headline h2 {
   display: inline-block;
   padding: 20px 0 8px;
@@ -93,7 +115,6 @@ a:hover {
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
-
 .blog-area {
   height: auto;
   width: 100%;
@@ -158,7 +179,7 @@ a:hover {
   padding: 10px 0;
 }
 
-.comments-type > a, .date-type, .blog-meta span.comments-type {
+.comments-type>a, .date-type, .blog-meta span.comments-type {
   color: #333;
   letter-spacing: 1px;
   margin-right: 5px;
@@ -168,7 +189,7 @@ a:hover {
   padding-right: 0 !important;
 }
 
-.blog-content-right .comments-type > a, .blog-content-right .date-type, .blog-content-right .blog-meta span.comments-type, .blog-content-right .blog-text p {
+.blog-content-right .comments-type>a, .blog-content-right .date-type, .blog-content-right .blog-meta span.comments-type, .blog-content-right .blog-text p {
   color: #fff;
   letter-spacing: 1px;
 }
@@ -176,7 +197,6 @@ a:hover {
 .single-blog h4 {
   font-size: 25px;
   font-weight: 600;
-
 }
 
 .single-blog .ready-btn {
@@ -256,7 +276,7 @@ a:hover {
   border-radius: 30px;
 }
 
-.pri_table_list > h3 {
+.pri_table_list>h3 {
   color: #333;
   font-size: 24px;
   font-weight: 700;
@@ -266,7 +286,7 @@ a:hover {
   transition: all 0.4s ease 0s;
 }
 
-.pri_table_list > h4 {
+.pri_table_list>h4 {
   color: #333;
   font-size: 21px;
   font-weight: 700;
@@ -288,32 +308,32 @@ a:hover {
   overflow: hidden;
 }
 
-.pri_table_list > button:hover {
+.pri_table_list>button:hover {
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
 }
 
-.active > h3 {
+.active>h3 {
   background: #f5f5f5 none repeat scroll 0 0;
   color: #333;
   transition: all 0.4s ease 0s;
 }
 
-.active > h4 {
+.active>h4 {
   background: #f5f5f5 none repeat scroll 0 0;
   color: #333;
   transition: all 0.4s ease 0s;
 }
 
-.active > button {
+.active>button {
   background: #333 none repeat scroll 0 0;
   border: 1px solid #333;
   color: #fff;
   transition: 0.4s;
 }
 
-.active > button:hover {
+.active>button:hover {
   background: #cc0000 none repeat scroll 0 0;
   border: 1px solid #cc0000;
   color: #fff;
@@ -327,11 +347,11 @@ a:hover {
   margin-top: 75px;
 }
 
-.bids-column h2{
+.bids-column h2 {
   margin-bottom: 25px;
 }
 
-.bids-column-body{
+.bids-column-body {
   padding: 20px;
 }
 
@@ -342,7 +362,7 @@ a:hover {
   font-weight: 700;
 }
 
-.bids-column-body td > a {
+.bids-column-body td>a {
   font-size: 14px;
   font-weight: 600;
 }
@@ -374,7 +394,7 @@ a:hover {
   padding: 45px 0 70px;
 }
 
-.org-header h2{
+.org-header h2 {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
@@ -384,7 +404,7 @@ a:hover {
   margin-top: 50px;
 }
 
-.org-body > .orgchart {
+.org-body>.orgchart {
   width: 70%;
 }
 
@@ -395,7 +415,7 @@ a:hover {
   padding: 45px 0 62px;
 }
 
-.pwr-body li{
+.pwr-body li {
   list-style-type: disc;
   padding: 15px 0px 15px 50px;
   font-size: 20px;
@@ -411,7 +431,7 @@ a:hover {
   text-justify: inter-word;
 }
 
-.vm-head > .section-headline {
+.vm-head>.section-headline {
   margin-bottom: -20px;
 }
 
@@ -419,11 +439,11 @@ a:hover {
   margin-top: 60px;
 }
 
-.go-head > .section-headline {
+.go-head>.section-headline {
   margin-bottom: -20px;
 }
 
-.go-body li{
+.go-body li {
   list-style-type: disc;
   padding: 10px 0px 10px;
   font-size: 20px;
@@ -433,7 +453,7 @@ a:hover {
   margin-top: 60px;
 }
 
-.quality-head > .section-headline {
+.quality-head>.section-headline {
   margin-bottom: 20px;
 }
 
@@ -445,7 +465,7 @@ a:hover {
   padding-bottom: 5px;
 }
 
-.quality-body > .headline{
+.quality-body>.headline {
   line-height: 25px;
 }
 
@@ -485,7 +505,6 @@ footer a {
 footer a:hover {
   color: black;
 }
-
 
 .footer-area {
   padding: 40px 0;
@@ -538,7 +557,7 @@ footer a:hover {
   border-radius: 50%;
 }
 
-.flicker-img > a {
+.flicker-img>a {
   float: left;
   padding: 1px;
   width: 33.33%;
@@ -599,7 +618,7 @@ footer a:hover {
   color: #444;
 }
 
-.copyright > p {
+.copyright>p {
   margin-bottom: 0;
   color: #444;
 }
@@ -616,7 +635,6 @@ footer a:hover {
 /*--------------------------------------------------------------
 # Location
 --------------------------------------------------------------*/
-
 .php-email-form button[type="submit"] {
   background: #333 none repeat scroll 0 0;
   border: 1px solid #333;
@@ -642,11 +660,11 @@ footer a:hover {
   margin-top: 75px;
 }
 
-.lost-archive-column h2{
+.lost-archive-column h2 {
   margin-bottom: 25px;
 }
 
-.lost-archive-body{
+.lost-archive-body {
   padding: 20px;
 }
 
@@ -657,7 +675,7 @@ footer a:hover {
   font-weight: 700;
 }
 
-.lost-archive-body td > a {
+.lost-archive-body td>a {
   font-size: 14px;
   font-weight: 600;
 }
@@ -673,9 +691,8 @@ footer a:hover {
     overflow: hidden;
   }
 
-  .dilg-logo{
+  .dilg-logo {
     max-width: 100%;
     width: 80%;
   }
-
 }
