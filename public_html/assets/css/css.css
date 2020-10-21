@@ -650,6 +650,54 @@ footer a:hover {
 }
 
 /*--------------------------------------------------------------
+# FAQS
+--------------------------------------------------------------*/
+#faqs {
+  padding: 45px 0 62px;
+}
+
+.faq-sub-headline>h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.faq-head>.section-headline {
+  margin-bottom: -20px;
+}
+
+.faq-headline {
+  padding: 10px 15px 0px 15px;
+}
+
+.faq-headline>h2 {
+  color: #b30000;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.faq-headline>h2:hover {
+  color: black;
+}
+
+.faq-question {
+  padding: 0px 15px;
+}
+
+.faq-question>p {
+  font-size: 17px;
+  padding: 0 70px 0 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.faq-question>ol {
+  padding: 0 120px 0;
+  line-height: 20px;
+}
+
+/*--------------------------------------------------------------
 # DMBPA
 --------------------------------------------------------------*/
 #lost-archive {
