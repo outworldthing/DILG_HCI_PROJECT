@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Organizational Structure - DILG</title>
+  <title>Barangay Official Directory - DILG</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -34,6 +34,148 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script>
+        function contentChange(num){
+                if(num==1){
+                  document.getElementById('contentBody').innerHTML=
+                    '<tr>'+
+                    '<td>REGION 01 - ILOCOS REGION</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=01">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 02 - CAGAYAN VALLEY</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=02">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 03 - CENTRAL LUZON</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=03">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION IV-A (CALABARZON)</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=04">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 05 - BICOL REGION</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=05">Download</a>'+
+                    '</td>'+
+                    '</tr>';
+                }else if(num==2){
+                    document.getElementById('contentBody').innerHTML=
+                    '<tr>'+
+                    '<td>REGION 06 - WESTERN VISAYAS</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=06">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 07 - CENTRAL VISAYAS</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=07">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 08 - EASTERN VISAYAS</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=08">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 09 - ZAMBOANGA PENINSULA</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=09">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 10 - NORTHERN MINDANAO</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=10">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 11 - DAVAO REGION</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=11">Download</a>'+
+                    '</td>'+
+                    '</tr>';
+                }else if(num==3){
+                  document.getElementById('contentBody').innerHTML=
+                    '<tr>'+
+                    '<td>REGION 12 - SOCCSKSARGEN</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=12">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>NCR - NATIONAL CAPITAL REGION</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=13">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>CAR - CORDILLERA ADMINISTRATIVE REGION</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=14">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>ARMM - AUTONOMOUS REGION IN MUSLIM MINDANAO</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=15">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION 13 - CARAGA</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=16">Download</a>'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>REGION IV-B (MIMAROPA)</td>'+
+                    '<td>'+
+                    '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=17">Download</a>'+
+                    '</td>'+
+                    '</tr>';
+                }
+            }
+            
+            function pageNumChange(num){
+                if(num==1){
+                  contentChange(num);
+                    document.getElementById('changePage').innerHTML=
+                    '<ul>'+
+                    '<li><b><a href="#" onclick="pageNumChange(1)">1</a></b></li>'+
+                    '<li><a href="#" onclick="pageNumChange(2)">2</a></li>'+
+                    '<li><a href="#" onclick="pageNumChange(3)">3</a></li>'+
+                    '</ul>';
+                }else if(num==2){
+                  contentChange(num);
+                    document.getElementById('changePage').innerHTML=
+                    '<ul>'+
+                    '<li><a href="#" onclick="pageNumChange(1)">1</a></li>'+
+                    '<li><b><a href="#" onclick="pageNumChange(2)">2</a></b></li>'+
+                    '<li><a href="#" onclick="pageNumChange(3)">3</a></li>'+
+                    '</ul>';
+                }
+                else if(num==3){
+                  contentChange(num);
+                    document.getElementById('changePage').innerHTML=
+                    '<ul>'+
+                    '<li><a href="#" onclick="pageNumChange(1)">1</a></li>'+
+                    '<li><a href="#" onclick="pageNumChange(2)">2</a></li>'+
+                    '<li><b><a href="#" onclick="pageNumChange(3)">3</a></b></li>'+
+                    '</ul>';
+                }
+            }
+        </script>
 </head>
 
 <body data-target="#navbar-example">
@@ -44,12 +186,12 @@
       <a href="../home.html"><img src="../assets/img/dilg-logo.png" alt="" class="img-fluid dilg-logo"></a>
     </div>
 
-    <div class="row nav-menu mt-1 mb-1">
+     <div class="row nav-menu mt-1 mb-1">
 
                 <ul class="mr-auto ml-auto">
                     <li class="active drop-down"><a href="#header">Home</a>
                         <ul>
-                            <li><a href="../HOME/bid-opportunities.html">Bid Opportunities</a></li>
+                            <li><a href="../bid-opportunities.html">Bid Opportunities</a></li>
                             <li><a href="#">Public Assistance Center</a></li>
                             <li><a href="#">Secretary's Corner</a></li>
                         </ul>
@@ -58,11 +200,11 @@
                     <li class="drop-down"><a href="#about">About Us</a>
                         <ul>
                             <li><a href="#">Key Officials</a></li>
-                            <li><a href="org-structure.html">Organizational Structure</a></li>
-                            <li><a href="pwr-functions.html">Powers and Functions</a></li>
-                            <li><a href="vision-mission.html">Vision, Mission, & Goals</a></li>
-                            <li><a href="who-we-are.html">Who We Are</a></li>
-                            <li><a href="location.html">Location Map</a></li>
+                            <li><a href="../org-structure.html">Organizational Structure</a></li>
+                            <li><a href="../pwr-functions.html">Powers and Functions</a></li>
+                            <li><a href="../vision-mission.html">Vision, Mission, & Goals</a></li>
+                            <li><a href="../who-we-are.html">Who We Are</a></li>
+                            <li><a href="../location.html">Location Map</a></li>
                             <li><a href="#blog">FAQs</a></li>
                         </ul>
                     </li>
@@ -121,7 +263,7 @@
                             <li><a href="#">DILG Central News</a></li>
                             <li><a href="#">DILG Regional News</a></li>
                             <li><a href="#">Events</a></li>
-                            <li><a href="../NEWS AND EVENTS/whats-new.html">What's New</a></li>
+                            <li><a href="../whats-new.html">What's New</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="#blog">Reports and Resources</a>
@@ -147,25 +289,78 @@
   </header><!-- End Header -->
 
   <!-- ======= Content ======= -->
-  <div id="org-structure">
-    <div class="container">
-      <div class="org-inner">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Organizational Structure</h2>
-            </div>
-            <div class="org-header">
-              <h2>DEPARTMENT OF THE INTERIOR AND LOCAL GOVERNMENT ORGANIZATIONAL STRUCTURE</h2>
-            </div>
-            <div class="org-body text-center">
-              <img src="assets/img/orgchart.png" class="orgchart" alt="">
-            </div>
+
+  <div id="bids">
+      <div class=" container">
+          <div class="justify-content-center row">
+              <div class="bids-column">
+                  <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+
+                      <div class="section-headline text-center">
+                          <h2>Barangay Official Directories</h2>
+                      </div>
+
+                      <div class="bids-column-body">
+                          <table>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        Region
+                                    </td>
+                                    <td>
+                                        Link
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id='contentBody'>
+                                <tr>
+                                    <td>REGION 01 - ILOCOS REGION</td>
+                                    <td>
+                                        <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=01">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REGION 02 - CAGAYAN VALLEY</td>
+                                    <td>
+                                        <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=02">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REGION 03 - CENTRAL LUZON</td>
+                                    <td>
+                                        <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=03">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REGION IV-A (CALABARZON)</td>
+                                    <td>
+                                        <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=04">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REGION 05 - BICOL REGION</td>
+                                    <td>
+                                        <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=05">Download</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="width:100%;">
+                        <div id="changePage" class="pagination justify-content-center">
+                            <ul>
+                                <li><b><a href="#" onclick="pageNumChange(1)">1</a></b></li>
+                                <li><a href="#" onclick="pageNumChange(2)">2</a></li>
+                                <li><a href="#" onclick="pageNumChange(3)">3</a></li>
+                            </ul>
+                        </div>
+                      </div><!-- .cl-column-body -->
+                  </div><!-- End Table -->
+              </div>
           </div>
-        </div>
       </div>
     </div>
-  </div>
+
+
   <!-- End Content -->
 
   <!-- ======= Footer ======= -->
