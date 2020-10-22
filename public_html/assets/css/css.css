@@ -650,6 +650,160 @@ footer a:hover {
 }
 
 /*--------------------------------------------------------------
+# NEWS
+--------------------------------------------------------------*/
+#news {
+  padding: 45px 0 62px;
+}
+
+.single-news {
+  margin-bottom: 30px;
+}
+
+.single-news-img {
+  margin: 15px 0;
+}
+
+.news-text {
+  padding: 20px 0 0 0;
+}
+
+.news-content {
+  padding: 0 20px;
+}
+
+.news-content h4 a {
+  color: #444;
+  text-decoration: none;
+}
+
+.news-content h4 a:hover {
+  color: #b30000;
+  text-decoration: none;
+}
+
+.news-content h4 {
+  color: #444;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.news-page {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.news-page .btns {
+  margin-top: 15px;
+}
+
+.blog-meta {
+  border-bottom: 1px dotted #fff;
+  padding: 0 0 10px;
+}
+
+.blog-meta span i {
+  padding-right: 10px;
+}
+
+.news-content .blog-meta {
+  border-bottom: 1px dotted #333;
+}
+
+.pst-content {
+  display: inline-block;
+  float: left;
+  width: 65%;
+}
+
+.pst-content p a:hover, .left-blog ul li a:hover {
+  color: #b30000;
+}
+
+.pst-content p a {
+  color: #444;
+  font-size: 15px;
+}
+
+.comments-type > a, .date-type, .blog-meta span.comments-type {
+  color: #333;
+  letter-spacing: 1px;
+  margin-right: 0px;
+}
+
+/*--------------------------------------------------------------
+# EVENTS
+--------------------------------------------------------------*/
+#events {
+  padding: 45px 0 62px;
+}
+
+.single-events {
+  margin-bottom: 30px;
+}
+
+.single-events-img {
+  margin: 15px 0;
+}
+
+.events-text {
+  padding: 20px 0 0 0;
+}
+
+.events-content {
+  padding: 0 90px;
+}
+
+.events-content h4 a {
+  color: #444;
+  text-decoration: none;
+}
+
+.events-content h4 a:hover {
+  color: #b30000;
+  text-decoration: none;
+}
+
+.events-content h4 {
+  color: #444;
+  /* text-align: center; */
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.events-page {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.events-page .btns {
+  margin-top: 15px;
+}
+
+.events-meta {
+  border-bottom: 1px dotted #fff;
+  /* text-align: center; */
+  padding: 0 0 10px;
+}
+
+.events-meta span i {
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.events-content .events-meta {
+  border-bottom: 1px dotted #333;
+}
+
+.comments-type > a, .date-type, .events-meta span.comments-type {
+  color: #333;
+  letter-spacing: 1px;
+  margin-right: 0px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------
 # FAQS
 --------------------------------------------------------------*/
 #faqs {
