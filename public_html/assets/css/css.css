@@ -732,6 +732,129 @@ footer a:hover {
 }
 
 /*--------------------------------------------------------------
+# NEWS-PAGE
+--------------------------------------------------------------*/
+
+#news-page {
+  padding: 45px 0 62px;
+}
+
+.single-news-page {
+  margin-bottom: 30px;
+}
+
+.single-news-page-img {
+  margin: 0px 0;
+}
+
+.news-text {
+  padding: 20px 0 0 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.actual-news-content {
+  padding: 0 20px;
+}
+
+.actual-news-content h4 a:hover {
+  color: #b30000;
+  text-decoration: none;
+}
+
+.actual-news-content h4 {
+  color: #444;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 35px 0 10px;
+}
+
+.actual-news-page {
+
+}
+
+.actual-news-page .btns {
+  margin-top: 15px;
+}
+
+.actual-news-meta {
+  border-bottom: 1px solid black;
+  padding: 0 0 10px;
+}
+
+.actual-news-meta span i {
+  padding-right: 10px;
+}
+
+.actual-news-content .blog-meta {
+  border-bottom: 1px dotted #333;
+}
+
+.pst-content {
+  display: inline-block;
+  float: left;
+  width: 65%;
+}
+
+.pst-content p a:hover, .left-blog ul li a:hover {
+  color: #b30000;
+}
+
+.pst-content p a {
+  color: #444;
+  font-size: 15px;
+}
+
+.comments-type > a, .date-type, .actual-news-meta span.comments-type {
+  color: #333;
+  letter-spacing: 1px;
+  margin-right: 0px;
+}
+
+/*--------------------------------------------------------------
+# PUBLIC-ASSITANCE-CENTER
+--------------------------------------------------------------*/
+#pac {
+  padding: 45px 0 62px;
+}
+
+.pac-body p{
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.pac-body input[type="text"], input[type="file"], select{
+  height: 39px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.pac-body input[type="submit"], input[type="reset"]{
+  font-size: 14px;
+  width: 120px;
+  border: 1px solid #bdbdbd;
+  border-radius: 30px;
+  padding: 15px 35px;
+  vertical-align: center;
+}
+
+.pac-body textarea{
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.pac-row {
+  margin: 20px 0;
+}
+
+/*--------------------------------------------------------------
 # EVENTS
 --------------------------------------------------------------*/
 #events {
@@ -852,6 +975,96 @@ footer a:hover {
 }
 
 /*--------------------------------------------------------------
+# KEY OFFICIALS
+--------------------------------------------------------------*/
+#key-officials {
+  padding: 45px 0 62px;
+}
+
+.ko-sub-headline h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+
+}
+
+.ko-head>.section-headline {
+  margin-bottom: -20px;
+}
+
+.ko-headline {
+  padding: 10px 15px 0px 15px;
+}
+
+.ko-headline>h2 {
+  color: #b30000;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.ko-headline>h2:hover {
+  color: black;
+}
+
+.ko-person{
+  margin: 10px 0 20px;
+}
+
+.ko-person:after {
+  border-bottom: 1px dotted black;
+  margin-top: 20px;
+  content: "";
+  display: block;
+}
+
+.ko-person p {
+  margin: 0 0 5px;
+  padding: 0 25px;
+}
+
+.ko-name p{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.ko-title p{
+  font-size: 16px;
+  color: #b30000;
+  font-weight: 500;
+}
+
+.ko-contact p{
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.ko-sub-headline h2 {
+  color: #b30000;
+  max-width: 35%;
+}
+
+.ko-sub-headline h2:hover {
+  color: #444;
+}
+
+.ko-sub h2{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
 # DMBPA
 --------------------------------------------------------------*/
 #lost-archive {
@@ -880,21 +1093,4 @@ footer a:hover {
 .lost-archive-body td>a {
   font-size: 14px;
   font-weight: 600;
-}
-
-/*--------------------------------------------------------------
-# Responsive
---------------------------------------------------------------*/
-@media (max-width: 768px) {
-  #header {
-    height: 100px;
-    padding: 10px 0;
-    background: rgba(255, 255, 255, 1);
-    overflow: hidden;
-  }
-
-  .dilg-logo {
-    max-width: 100%;
-    width: 80%;
-  }
 }

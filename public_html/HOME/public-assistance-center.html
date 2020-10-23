@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Facts and Figures - DILG</title>
+  <title>Public Assistance Center - DILG</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/favicon.png" rel="apple-touch-icon">
+  <link href="../../assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
@@ -49,9 +49,9 @@
       <ul class="mr-auto ml-auto">
         <li class="active drop-down"><a href="#header">Home</a>
           <ul>
-            <li><a href="../HOME/bid-opportunities.html">Bid Opportunities</a></li>
-            <li><a href="../HOME/public-assistance-center.html">Public Assistance Center</a></li>
-            <li><a href="../HOME/Biography.html">Secretary's Corner</a></li>
+            <li><a href="bid-opportunities.html">Bid Opportunities</a></li>
+            <li><a href="public-assistance-center.html">Public Assistance Center</a></li>
+            <li><a href="biography.html">Secretary's Corner</a></li>
           </ul>
         </li>
 
@@ -86,8 +86,8 @@
                 <li><a href="https://www.dilg.gov.ph/local-officials/master">Masterlist of Local Officials</a></li>
               </ul>
             </li>
-            <li><a href="facts-figs.html">Facts and Figures</a></li>
-            <li><a href="leagues.html">Leagues</a></li>
+            <li><a href="../LOCAL GOVERNMENT UNITS/facts-figs.html">Facts and Figures</a></li>
+            <li><a href="../LOCAL GOVERNMENT UNITS/leagues.html">Leagues</a></li>
             <li><a href="https://lgu201.dilg.gov.ph/">LGU 201</a></li>
           </ul>
         </li>
@@ -146,70 +146,85 @@
 
   <!-- ======= Content ======= -->
 
-<!--   <div class="placeholder">
+  <div id="pac">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
 
-  </div> -->
-  <div id="bids">
-            <div class="container">
-                <div class="justify-content-center row">
-                    <div class="bids-column-body">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>PUBLIC ASSITANCE CENTER</h2>
+          </div>
 
-                            <div class="section-headline text-center">
-                                <h2>Facts and Figures</h2>
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+          <div class="pac-body">
+            <form class="" action="index.html" method="post">
 
-                            <div style="width:100%;">
-                                <div class="section-headline text-center">
-                                  <h3><u>
-                                    Public Access Files
-                                  </u></h3>
-                                </div>
-                            </div>
+              <div class="row pac-row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <p>Name</p>
+                  <input type="text" name="name" value="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <p>Email Address</p>
+                  <input type="text" name="email address" value="">
+                </div>
+              </div>
 
-                            <br>
-                            <br>
-                            <div class="justify-content-center row">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <td>
-                                                Document
-                                            </td>
-                                            <td>
-                                                Link
-                                            </td>
-                                            <td>
-                                                Date
-                                            </td>
-                                        </tr>
-                                  </thead>
-                                  <tbody>
-                                        <tr>
-                                            <td>
-                                              <li>Regional and Provincial Summary - Number of Provinces, Cities, Municipalities and Barangays as of 30 June 202</li>
-                                            </td>
-                                            <td>
-                                              <a href="https://www.dilg.gov.ph/PDF_File/reports_resources/dilg-reports-resources-2018125_557407d9bd.pdf">Download</a>
-                                            </td>
-                                            <td>
-                                                October 20, 2020
-                                            </td>
-                                        </tr>
-                                  </tbody>
-                                </table>
-                            </div>
-                            <br>
-                            <br>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="row pac-row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <p>Contact Number</p>
+                  <input type="text" name="contact number" value="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <p>Group</p>
+                  <select class="" name="group">
+                    <option value="">LGU</option>
+                    <option value="">NGO</option>
+                    <option value="">NGA</option>
+                    <option value="">General Public</option>
+                    <option value="">PO</option>
+                    <option value="">Others</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row pac-row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Subject</p>
+                  <input type="text" name="Subject" value="">
+                </div>
+              </div>
+
+              <div class="row pac-row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Message</p>
+                  <textarea name="message" rows="8" cols="80"></textarea>
+                </div>
+              </div>
+
+              <div class="row pac-row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Upload Supporting Documents</p>
+                  <input type="file" name="supporting documents" value="">
+                  <span>Allowed file: *.jpeg,*.jpg,*.gif,*.png, *.pdf, *.doc, *.docx, *.xls, *.xlsx, *.ppt, *.pptx</span><br>
+                  <span>Max File Size: 2mb</span>
+                </div>
+              </div>
+
+              <div class="row pac-row text-right">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <input type="reset" name="" class="btns" value="RESET">
+                  <input type="submit" name="" class="btns" value="SUBMIT">
+
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- End Content -->
@@ -276,7 +291,7 @@
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
   <script src="../assets/vendor/appear/jquery.appear.js"></script>
   <script src="../assets/vendor/knob/jquery.knob.js"></script>
