@@ -2,8 +2,6 @@
 # General
 --------------------------------------------------------------*/
 body, .sticky-footer-wrapper  {
-  height: 52.8vh;
-  max-height: 100vh;
   margin: 0;
   padding: 0;
 }
