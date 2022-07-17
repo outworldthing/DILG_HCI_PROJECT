@@ -5,18 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Vision & Mission - DILG</title>
+  <title>Barangay Official Directory - DILG</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../../assets/img/favicon.png" rel="apple-touch-icon">
+  <link href="../assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,6 +34,147 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script>
+    function contentChange(num) {
+      if (num == 1) {
+        document.getElementById('contentBody').innerHTML =
+          '<tr>' +
+          '<td>REGION 01 - ILOCOS REGION</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=01">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 02 - CAGAYAN VALLEY</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=02">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 03 - CENTRAL LUZON</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=03">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION IV-A (CALABARZON)</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=04">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 05 - BICOL REGION</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=05">Download</a>' +
+          '</td>' +
+          '</tr>';
+      } else if (num == 2) {
+        document.getElementById('contentBody').innerHTML =
+          '<tr>' +
+          '<td>REGION 06 - WESTERN VISAYAS</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=06">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 07 - CENTRAL VISAYAS</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=07">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 08 - EASTERN VISAYAS</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=08">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 09 - ZAMBOANGA PENINSULA</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=09">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 10 - NORTHERN MINDANAO</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=10">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 11 - DAVAO REGION</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=11">Download</a>' +
+          '</td>' +
+          '</tr>';
+      } else if (num == 3) {
+        document.getElementById('contentBody').innerHTML =
+          '<tr>' +
+          '<td>REGION 12 - SOCCSKSARGEN</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=12">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>NCR - NATIONAL CAPITAL REGION</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=13">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>CAR - CORDILLERA ADMINISTRATIVE REGION</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=14">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>ARMM - AUTONOMOUS REGION IN MUSLIM MINDANAO</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=15">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION 13 - CARAGA</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=16">Download</a>' +
+          '</td>' +
+          '</tr>' +
+          '<tr>' +
+          '<td>REGION IV-B (MIMAROPA)</td>' +
+          '<td>' +
+          '<a href="https://bis.dilg.gov.ph/bops/default/master?psgc=17">Download</a>' +
+          '</td>' +
+          '</tr>';
+      }
+    }
+
+    function pageNumChange(num) {
+      if (num == 1) {
+        contentChange(num);
+        document.getElementById('changePage').innerHTML =
+          '<ul>' +
+          '<li><b><a href="#" onclick="pageNumChange(1)">1</a></b></li>' +
+          '<li><a href="#" onclick="pageNumChange(2)">2</a></li>' +
+          '<li><a href="#" onclick="pageNumChange(3)">3</a></li>' +
+          '</ul>';
+      } else if (num == 2) {
+        contentChange(num);
+        document.getElementById('changePage').innerHTML =
+          '<ul>' +
+          '<li><a href="#" onclick="pageNumChange(1)">1</a></li>' +
+          '<li><b><a href="#" onclick="pageNumChange(2)">2</a></b></li>' +
+          '<li><a href="#" onclick="pageNumChange(3)">3</a></li>' +
+          '</ul>';
+      } else if (num == 3) {
+        contentChange(num);
+        document.getElementById('changePage').innerHTML =
+          '<ul>' +
+          '<li><a href="#" onclick="pageNumChange(1)">1</a></li>' +
+          '<li><a href="#" onclick="pageNumChange(2)">2</a></li>' +
+          '<li><b><a href="#" onclick="pageNumChange(3)">3</a></b></li>' +
+          '</ul>';
+      }
+    }
+  </script>
 </head>
 
 <body data-target="#navbar-example">
@@ -43,11 +182,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top shadow">
     <div class="row justify-content-center">
-<<<<<<<< HEAD:vision-mission.html
-      <a href="index.html"><img src="assets/img/dilg-logo.png" alt="" class="img-fluid dilg-logo"></a>
-========
       <a href="../index.html"><img src="../assets/img/dilg-logo.png" alt="" class="img-fluid dilg-logo"></a>
->>>>>>>> jeff-branch:ABOUT US/vision-mission.html
     </div>
 
     <div class="row nav-menu mt-1 mb-1">
@@ -63,12 +198,12 @@
 
         <li class="drop-down"><a href="#about">About Us</a>
           <ul>
-            <li><a href="key-officials.html">Key Officials</a></li>
-            <li><a href="org-structure.html">Organizational Structure</a></li>
-            <li><a href="pwr-functions.html">Powers and Functions</a></li>
-            <li><a href="vision-mission.html">Vision, Mission, & Goals</a></li>
-            <li><a href="who-we-are.html">Who We Are</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="../ABOUT US/key-officials.html">Key Officials</a></li>
+            <li><a href="../ABOUT US/org-structure.html">Organizational Structure</a></li>
+            <li><a href="../ABOUT US/pwr-functions.html">Powers and Functions</a></li>
+            <li><a href="../ABOUT US/vision-mission.html">Vision, Mission, & Goals</a></li>
+            <li><a href="../ABOUT US/who-we-are.html">Who We Are</a></li>
+            <li><a href="../ABOUT US/faqs.html">FAQs</a></li>
           </ul>
         </li>
 
@@ -99,9 +234,9 @@
         </li>
         <li class="drop-down"><a href="#portfolio">Barangay</a>
           <ul>
-            <li><a href="../BARANGAY/barangayAEA.html">Barangay Affairs, Events, and Activities</a></li>
+            <li><a href="barangayAEA.html">Barangay Affairs, Events, and Activities</a></li>
             <li><a href="https://drive.google.com/drive/folders/18tcIijj_1DVlWOXqGhNzfHtRe-xbOkbg">Barangay Summit of Good Governance</a></li>
-            <li><a href="../BARANGAY/barangay-official-directory.html">Barangay Official Directory</a></li>
+            <li><a href="barangay-official-directory.html">Barangay Official Directory</a></li>
             <li><a href="https://psa.gov.ph/classification/psgc/downloads/PSGC%20Publication%20March2020.xlsx">Masterlist of Barangays</a></li>
           </ul>
         </li>
@@ -152,94 +287,77 @@
 
   <!-- ======= Content ======= -->
 
-  <div id="vision-mission">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="vm-head">
+  <div id="bids">
+    <div class=" container">
+      <div class="justify-content-center row">
+        <div class="bids-column">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+
             <div class="section-headline text-center">
-              <h2>Vision & Mission</h2>
+              <h2>Barangay Official Directories</h2>
             </div>
-          </div>
-          <div class="vm-body">
-            <div class="sub-headline">
-              <h2>Vision</h2>
-            </div>
-            <div class="headline">
-              <p>A strongly determined and highly trusted Department committed to capacitate and nurture local
-                government units, public order and safety institutions to sustain peaceful, progressive, and resilient
-                communities where people live
-                happily.</p>
-            </div>
-            <div class="sub-headline">
-              <h2>Mission</h2>
-            </div>
-            <div class="headline">
-              <p>The Department shall promote peace and order, ensure public safety, strengthen capability of local
-                government units through active people participation and a professionalized corps of civil servants.</p>
-            </div>
-          </div>
-          <div class="go-head">
-            <div class="section-headline text-center">
-              <h2>Goals & Objectives</h2>
-            </div>
-          </div>
-          <div class="go-body">
-            <div class="sub-headline">
-              <h2>Goals</h2>
-            </div>
-            <div class="headline">
-              <ul>
-                <li>Peaceful, safe, self-reliant and development-dominated communities;</li>
-                <li>Improve performance of local governments in governance, administration, social and economic
-                  development and environmental management;</li>
-                <li>Sustain peace and order condition and ensure public safety.</li>
-              </ul>
-            </div>
-            <div class="sub-headline">
-              <h2>Objectives</h2>
-            </div>
-            <div class="headline">
-              <ul>
-                <li>Reduce crime incidents and improve crime solution efficiency</li>
-                <li>Improve jail management and penology services</li>
-                <li>Improve fire protection services</li>
-                <li>Continue professionalization of PNP, BFP and BJMP personnel and services</li>
-                <li>Enhance LGU capacities to improve their performance and enable them to effectively and efficiently
-                  deliver services to their constituents</li>
-                <li>Continue to initiate policy reforms in support of local autonomy</li>
-              </ul>
-            </div>
-            <div class="quality-head">
-              <div class="section-headline text-center">
-                <h2>DILG-CO Quality Policy</h2>
-              </div>
-            </div>
-            <div class="quality-body">
-              <div class="headline">
-                <p>We, the DILG-Central Office, imbued with the core values of <strong>Integrity, Commitment, Teamwork
-                    and Responsiveness</strong>, commit to <strong>formulate sound policies</strong> on strengthening
-                  local government capacities,
-                  performing oversight function over LGUs, and providing rewards and incentives.&nbsp;&nbsp; We pledge
-                  to <strong>provide effective technical and administrative services</strong> to promote
-                  <strong>excellence in local
-                    governance</strong> and enhance the service delivery of our Regional and Field Offices for the
-                  <strong>LGUs to become transparent, resilient, socially-protective and competitive, </strong>where
-                  <strong>people in the community live
-                    happily.</strong></p>
-                <p>We commit to continually improve the effectiveness of our Quality Management System compliant with
-                  applicable statutory and regulatory requirements and international standards gearing towards
-                  organizational efficiency in pursuing
-                  our mandate and achieving our client’s satisfaction.</p>
-                <p>We commit to consistently demonstrate a <strong>“Matino, Mahusay at Maasahang Kagawaran Para sa
-                    Mapagkalinga at Maunlad na Pamahalaang Lokal”.</strong></p>
-              </div>
-            </div>
+
+            <div class="bids-column-body">
+              <table style="width: 100%;" class="mb-3">
+                <thead>
+                  <tr>
+                    <td>
+                      Region
+                    </td>
+                    <td>
+                      Link
+                    </td>
+                  </tr>
+                </thead>
+                <tbody id='contentBody'>
+                  <tr>
+                    <td>REGION 01 - ILOCOS REGION</td>
+                    <td>
+                      <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=01">Download</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>REGION 02 - CAGAYAN VALLEY</td>
+                    <td>
+                      <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=02">Download</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>REGION 03 - CENTRAL LUZON</td>
+                    <td>
+                      <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=03">Download</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>REGION IV-A (CALABARZON)</td>
+                    <td>
+                      <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=04">Download</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>REGION 05 - BICOL REGION</td>
+                    <td>
+                      <a href="https://bis.dilg.gov.ph/bops/default/master?psgc=05">Download</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div style="width:100%;">
+                <div id="changePage" class="pagination justify-content-center mb-5">
+                  <ul>
+                    <li><b><a href="#" onclick="pageNumChange(1)">1</a></b></li>
+                    <li><a href="#" onclick="pageNumChange(2)">2</a></li>
+                    <li><a href="#" onclick="pageNumChange(3)">3</a></li>
+                  </ul>
+                </div>
+              </div><!-- .cl-column-body -->
+            </div><!-- End Table -->
           </div>
         </div>
       </div>
     </div>
-
+</div>
 
     <!-- End Content -->
 
@@ -253,12 +371,7 @@
                 <div class="row">
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="footer-logo text-center">
-<<<<<<<< HEAD:vision-mission.html
-                      <img src="assets/img/coa-ph.png" alt="philippines coat of arms" class="img-fluid"
-                        style="max-width:100%;">
-========
                       <img src="../assets/img/coa-ph.png" alt="philippines coat of arms" class="img-fluid" style="max-width:100%;">
->>>>>>>> jeff-branch:ABOUT US/vision-mission.html
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12">
@@ -274,8 +387,7 @@
               <div class="footer-head">
                 <h4>About GOVPH</h4>
                 <p>
-                  Learn more about the Philippine Government, its structure, how government works, and the people behind
-                  it.
+                  Learn more about the Philippine Government, its structure, how government works, and the people behind it.
                 </p>
                 <div class="footer-contacts">
                   <ul>
@@ -311,7 +423,7 @@
     <!-- Vendor JS Files -->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="../assets/vendor/php-email-form/validate.js"></script>
     <script src="../assets/vendor/appear/jquery.appear.js"></script>
     <script src="../assets/vendor/knob/jquery.knob.js"></script>

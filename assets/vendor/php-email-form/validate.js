@@ -3,18 +3,32 @@
 * URL: https://bootstrapmade.com/php-email-form/
 * Author: BootstrapMade.com
 */
+<<<<<<< HEAD
 !(function ($) {
   "use strict";
 
   $('form.php-email-form').submit(function (e) {
     e.preventDefault();
 
+=======
+!(function($) {
+  "use strict";
+
+  $('form.php-email-form').submit(function(e) {
+    e.preventDefault();
+    
+>>>>>>> jeff-branch
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
+<<<<<<< HEAD
     f.children('input').each(function () { // run all inputs
 
+=======
+    f.children('input').each(function() { // run all inputs
+     
+>>>>>>> jeff-branch
       var i = $(this); // current input
       var rule = i.attr('data-rule');
 
@@ -48,7 +62,11 @@
             break;
 
           case 'checked':
+<<<<<<< HEAD
             if (!i.is(':checked')) {
+=======
+            if (! i.is(':checked')) {
+>>>>>>> jeff-branch
               ferror = ierror = true;
             }
             break;
@@ -63,7 +81,11 @@
         i.next('.validate').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
+<<<<<<< HEAD
     f.children('textarea').each(function () { // run all inputs
+=======
+    f.children('textarea').each(function() { // run all inputs
+>>>>>>> jeff-branch
 
       var i = $(this); // current input
       var rule = i.attr('data-rule');
@@ -99,16 +121,25 @@
     var this_form = $(this);
     var action = $(this).attr('action');
 
+<<<<<<< HEAD
     if (!action) {
+=======
+    if( ! action ) {
+>>>>>>> jeff-branch
       this_form.find('.loading').slideUp();
       this_form.find('.error-message').slideDown().html('The form action property is not set!');
       return false;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> jeff-branch
     this_form.find('.sent-message').slideUp();
     this_form.find('.error-message').slideUp();
     this_form.find('.loading').slideDown();
 
+<<<<<<< HEAD
     if ($(this).data('recaptcha-site-key')) {
       var recaptcha_site_key = $(this).data('recaptcha-site-key');
       grecaptcha.ready(function () {
@@ -120,6 +151,19 @@
       php_email_form_submit(this_form, action, this_form.serialize());
     }
 
+=======
+    if ( $(this).data('recaptcha-site-key') ) {
+      var recaptcha_site_key = $(this).data('recaptcha-site-key');
+      grecaptcha.ready(function() {
+        grecaptcha.execute(recaptcha_site_key, {action: 'php_email_form_submit'}).then(function(token) {
+          php_email_form_submit(this_form,action,this_form.serialize() + '&recaptcha-response=' + token);
+        });
+      });
+    } else {
+      php_email_form_submit(this_form,action,this_form.serialize());
+    }
+    
+>>>>>>> jeff-branch
     return true;
   });
 
@@ -129,18 +173,27 @@
       url: action,
       data: data,
       timeout: 40000
+<<<<<<< HEAD
     }).done(function (msg) {
+=======
+    }).done( function(msg){
+>>>>>>> jeff-branch
       if (msg == 'OK') {
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
         this_form.find("input:not(input[type=submit]), textarea").val('');
       } else {
         this_form.find('.loading').slideUp();
+<<<<<<< HEAD
         if (!msg) {
+=======
+        if(!msg) {
+>>>>>>> jeff-branch
           msg = 'Form submission failed and no error message returned from: ' + action + '<br>';
         }
         this_form.find('.error-message').slideDown().html(msg);
       }
+<<<<<<< HEAD
     }).fail(function (data) {
       console.log(data);
       var error_msg = "Form submission failed!<br>";
@@ -150,11 +203,26 @@
           error_msg += ' ' + data.statusText;
         }
         if (data.status) {
+=======
+    }).fail( function(data){
+      console.log(data);
+      var error_msg = "Form submission failed!<br>";
+      if(data.statusText || data.status) {
+        error_msg += 'Status:';
+        if(data.statusText) {
+          error_msg += ' ' + data.statusText;
+        }
+        if(data.status) {
+>>>>>>> jeff-branch
           error_msg += ' ' + data.status;
         }
         error_msg += '<br>';
       }
+<<<<<<< HEAD
       if (data.responseText) {
+=======
+      if(data.responseText) {
+>>>>>>> jeff-branch
         error_msg += data.responseText;
       }
       this_form.find('.loading').slideUp();

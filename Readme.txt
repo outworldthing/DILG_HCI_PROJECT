@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Recreation of Department of the Interior and Local Government (DILG) Website as a deliverable 
 for our Human Computer Interaction subject course
 
@@ -6,6 +7,9 @@ or any other government branch in the Philippines
 
 
 Bootstrap Template used:
+=======
+Thanks for downloading this template!
+>>>>>>> jeff-branch
 
 Template Name: eBusiness
 Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
